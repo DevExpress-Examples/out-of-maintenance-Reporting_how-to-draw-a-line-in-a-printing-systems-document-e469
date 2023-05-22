@@ -1,6 +1,7 @@
 using System;
 using System.Drawing;
 using System.Windows.Forms;
+using DevExpress.Drawing;
 using DevExpress.XtraPrinting;
 // ...
 
@@ -25,7 +26,7 @@ namespace LineBrickAndDrawLine {
             LineBrick brick = gr.DrawLine(new PointF(0, 0), new PointF(200, 200), Color.Red, 5);
 
             // Change the line style to dash-dot-dot.
-            brick.LineStyle = System.Drawing.Drawing2D.DashStyle.DashDotDot;
+            brick.LineStyle = DXDashStyle.DashDotDot;
 
             // Hide brick borders.
             brick.BorderWidth = 0;
@@ -48,7 +49,7 @@ namespace LineBrickAndDrawLine {
             brick.LineDirection = DevExpress.XtraReports.UI.LineDirection.BackSlant;
             brick.ForeColor = Color.Red;
             brick.LineWidth = 5;
-            brick.LineStyle = System.Drawing.Drawing2D.DashStyle.DashDotDot;
+            brick.LineStyle = DXDashStyle.DashDotDot;
             brick.BorderWidth = 0;
 
             // Draw this brick.
